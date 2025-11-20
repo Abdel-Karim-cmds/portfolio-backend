@@ -36,7 +36,7 @@ async function sendMail({ name, email, message }) {
     const mailOptions = {
         from: `"Portfolio Contact" <${process.env.mail_user}>`,
         to: process.env.mail_user,
-        subject: `New message from ${fullname} from portfolio website`,
+        subject: `New message from ${name} from portfolio website`,
         html:
             `
         <div style="font-family: Arial, sans-serif; background: #f9fafb; padding: 20px;">
